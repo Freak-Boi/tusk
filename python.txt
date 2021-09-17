@@ -10,4 +10,5 @@ And i want to rule this  world  yeeeeehhaaaaaaaaa
 
 sorrry i dont want to waste my time in this blah blah
 
+
 print("stand up for the champion")
