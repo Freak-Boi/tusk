@@ -110,6 +110,16 @@ print(member(12, [12, 'a']))
 print(member(4, ['a,b,c']))
 
 
+def historical_boi(n):
+    for i in n:
+        print(i * '*')
+    print(10 * '_', " just for adding some extra spaces")
+
+
+print(historical_boi([3, 4, 5]))
+print(historical_boi([2, 3, 4]))
+
+
 def generate_char(x, str):
     result = ''
     for i in range(x):
