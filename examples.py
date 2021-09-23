@@ -191,3 +191,71 @@
 #
 # print("The length of the words that are written are following", words_length(['hello', 'peaky blinder']))
 # print("the length of the words tha ara written are following ", words_length(['something is fleshy around here']))
+
+# _______________________exercise 15  find the longest word _______________________________________________
+#
+# def longest_len(a):
+#     max1 = len(a[0])
+#     temp = a[0]
+#     for i in a:
+#         if (len(i) > max1):
+#             max1 = len(i)
+#             temp = i
+#     print("the word with the longest length is ", temp, 'and the length is ',  max1)
+#
+#
+# a =['one', ' two', 'third', 'four', "nobody"]
+# longest_len(a)
+
+
+# _________________________________________ example 16 filter long words_____________________________________
+def long_words(n, str):
+    word_len = []
+    txt = str.split(" ")
+    for x in txt:
+        if len(x) > n:
+            word_len.append(x)
+    return word_len
+
+
+print(long_words(3, "The quick brown fox jumps over the lazy dog"))
+
+# -______________________________________ example 17 plaindromic ignore punctuation, capitilism etc
+
+
+import string
+
+ignored = string.punctuation + " "
+
+
+def is_palindrome(str):
+    cleanstr = ""
+
+    for i in str:
+        cleanstr += "" if i in ignored else i  # I love Python ternary operator
+
+    return cleanstr.lower() == cleanstr[::-1].lower()
+
+
+print(is_palindrome("Go hang a salami I'm a lasagna hog."))
+print(is_palindrome("Was it a rat I saw?"))
+print(is_palindrome("Step on no pets"))
+print(is_palindrome("Sit on a potato pan, Otis!"))
+print(is_palindrome("Lisa Bonet ate no basil"))
+print(is_palindrome("Satan, oscillate my metallic sonatas"))
+print(is_palindrome("I roamed under it as a tired nude Maori"))
+print(is_palindrome("Rise to vote sir"))
+print(is_palindrome("Dammit, I'm mad!"))
+print(is_palindrome("This is not a palindrome"))
+
+
+# __________ example 19 pangrma _________________________
+
+import string
+
+alpha = string.ascii_lowercase
+
+def pangrama(str):
+    found = []
+    for i in str.lower():
+        if c in alpha and c not if
